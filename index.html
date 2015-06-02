@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="user-scalable=no, width=device-width", initial scale=2>
+      <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+      <script src="build/hammer.min.js"></script>
+      <script src="build/anima.js"></script>
+      <link rel="stylesheet" type="text/css" href="plain.css">
+  </head>
+    <body id=body>
+        <div class=background id=background>
+          <div class=flexbuts>
+              <span class=buttons id=tasktotal></span>
+              <span class=buttons id=tasktoday></span>
+              <span id=add class=buttons>Add New Task</span>
+          </div>
+            <div id=swipeable>
+                <div id=sysmsgt></div>
+                <div id=sysmsgu></div>
+            </div>
+            <div id=swipeablebuttons class=swipeablebuttons>
+                <div id=cardbuttonsleft>Skip</div>
+                <div id=cardbuttonsright>Do Today!</div>
+            </div>
+            <div id=typeable>
+                <div class=inputcontain id=inputcontain>
+                    <input autofocus class=fields type='text' id="taskin" placeholder='Tell Me True'/>
+                    <input class=fields type='text' id="descripa" placeholder='What do you forget to do?'/>
+                </div>
+                <div class=typeablebuttons>
+                    <div class='fields shadow' id=submit>Add Task</div>
+                    <div class='fields shadow' id=cancel>Cancel</div>
+                </div>
+            </div>
+            <div id=listable></div>
+        </div><!-- background -->
+        <div id=deskbar>
+            <div class=buttons id=desktoday>Today's Tasks:</div>
+            <div id=desklist></div>
+        </div>
+        <script src="plain.js"></script>
+    </body>
+</html>
